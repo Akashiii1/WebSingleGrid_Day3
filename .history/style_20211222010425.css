@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+  --Cyan: hsl(179, 62%, 43%);
+ --BrightYellow: hsl(71, 73%, 54%);
+ --LightGray: hsl(204, 43%, 93%);
+ --GrayishBlue: hsl(218, 22%, 67%);
+}
+html {
+box-sizing: border-box;
+}
+*{
+margin: 0;
+padding: 0;
+}
+*,*:before,*:after {
+box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button{
+outline: none;
+}
+input{
+line-height: normal;
+}
+label,
+button{
+cursor: pointer;
+}
+a {
+text-decoration: none;
+}
+img {
+display: block;
+max-width: 100%;
+}
+body{
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eee;
+}
+.wrapper{
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.container{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:"it1 it1"
+                      "it2 it3";
+}
+.item1{
+  grid-area: it1;
+}
+.item2{
+  grid-area: it2;
+
+}
+.item3{
+  grid-area: it3;
+}
+.box{
+  padding: 40px;
+}
+.item1 h1{
+  font-size: 32px;
+  color:var(--Cyan) ;
+  margin-bottom: 30px;
+}
+.item1 h3{
+  color: var(--BrightYellow);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.item1 p{
+  color: var(--GrayishBlue);
+}
